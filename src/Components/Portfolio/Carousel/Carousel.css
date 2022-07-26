@@ -1,0 +1,45 @@
+.carousel-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e1e1e1 !important;
+  border-radius: 1rem;
+}
+
+.control-dots {
+  bottom: 1rem;
+}
+
+.projects-h3 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.meetforce-div,
+.tic-tac-toe-div,
+.currency-conv-div {
+  margin: 50px auto;
+}
+
+.carousel-p-div {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-p {
+  text-align: left;
+  font-size: 1.8rem;
+  margin: 3rem 0 3rem 2rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.1rem;
+}
+
+.carousel-btn-text {
+  display: flex;
+}
+
+.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.icon.css-i4bv87-MuiSvgIcon-root {
+  color: #494949;
+  padding-left: 0.6rem;
+  font-size: 2.5rem;
+}

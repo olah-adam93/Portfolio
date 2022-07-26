@@ -1,0 +1,71 @@
+input,
+textarea {
+  background: none;
+  color: #333333;
+  font-size: 18px;
+  padding: 15px 10px 15px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #333333;
+}
+
+input:focus ~ .bar:before,
+textarea:focus ~ .bar:before {
+  width: 300px;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.bar {
+  display: block;
+  width: 300px;
+  height: 1px;
+}
+
+/* .form-container {
+      margin: auto;
+  } */
+.form-div {
+  width: 25%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.contact-link-div {
+  margin-bottom: 20px;
+}
+
+.contact-link-buttons {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin-bottom: 60px;
+}
+
+.contact-container {
+  margin-bottom: 40px;
+}
+
+.send-button {
+  margin: auto;
+  margin-left: 40px;
+}
+
+.github-button {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.contact-btn-text {
+  display: flex;
+}

@@ -1,0 +1,54 @@
+.fullpage {
+  height: 100vh;
+}
+
+.welcome-container {
+  width: 100%;
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+section {
+  width: 50%;
+}
+
+.linkedinPhoto {
+  border-radius: 50%;
+  float: right;
+  margin-right: 50px;
+}
+
+.welcome-text {
+  display: flex;
+  padding-left: 50px;
+}
+
+.text-div {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 45px;
+  margin: 0;
+  font-weight: 600;
+  color: #333333;
+}
+
+.welcome-h1 {
+  font-size: 65px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #4169e1;
+  font-weight: 800;
+}
+
+.welcome-h3 {
+  font-size: 45px;
+  color: #4169e1;
+  font-weight: 800;
+  display: inline;
+}

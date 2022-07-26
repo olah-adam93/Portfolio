@@ -1,0 +1,50 @@
+.books-div {
+  width: 75%;
+  margin: auto;
+}
+
+.about-text {
+  margin-bottom: 20px;
+}
+
+.hobbies-div {
+  display: flex;
+  margin: auto;
+}
+
+.hobbies-container {
+  margin: auto;
+}
+
+.hobbies-container .icon {
+  width: 80px;
+  height: 80px;
+}
+
+.hobbies-p-div {
+  width: 47%;
+  margin: auto;
+  margin-left: 0;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.hobbies-p {
+  width: 75%;
+  font-size: 18px;
+}
+.tech-image {
+  margin: 15px;
+}
+
+.books-div {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.about-p {
+  width: 70%;
+  font-size: 18px;
+  margin: auto;
+  text-align: left;
+}
