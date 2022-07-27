@@ -1,4 +1,4 @@
-.carousel-img {
+.carousel img {
   object-fit: cover;
   width: 100%;
   height: auto;
@@ -13,12 +13,13 @@
 .projects-h3 {
   font-size: 3.5rem;
   font-weight: 400;
+  margin: 2rem auto;
 }
 
 .meetforce-div,
 .tic-tac-toe-div,
 .currency-conv-div {
-  margin: 50px auto;
+  margin: 5rem auto;
 }
 
 .carousel-p-div {
@@ -29,8 +30,8 @@
 .carousel-p {
   text-align: left;
   font-size: 1.8rem;
-  margin: 3rem 0 3rem 2rem;
-  line-height: 2.2rem;
+  margin: 3rem 1rem;
+  line-height: 2.5rem;
   letter-spacing: 0.1rem;
 }
 

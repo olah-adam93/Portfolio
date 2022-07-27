@@ -6,7 +6,7 @@ const Projects = (props) => {
   return (
     <div id={props.id} className='portfolio-container'>
       <h1>Portfolio</h1>
-      <section className='awesome-trivia'>
+      <section className='projects-container'>
         <MyCarousel />
       </section>
     </div>

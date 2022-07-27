@@ -24,10 +24,6 @@ class Form extends Component {
     this.setState({ [field]: value });
   }
 
-  // resetForm = () => {
-  //   this.setState(this.baseState)
-  // }
-
   render() {
     return (
       <div id={this.props.id} className='contact-container'>

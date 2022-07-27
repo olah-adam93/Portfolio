@@ -160,7 +160,7 @@ const MyCarousel = () => {
               two countries' currency by clicking on the exchange icon.
             </p>
             <p className='carousel-p'>
-              Technologies: HTML, CSS, Javascript, ExchangeRate-API
+              Technologies: HTML, CSS, JavaScript, ExchangeRate-API
             </p>
           </div>
           <div>

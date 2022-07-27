@@ -2,10 +2,10 @@ input,
 textarea {
   background: none;
   color: #333333;
-  font-size: 18px;
-  padding: 15px 10px 15px 5px;
+  font-size: 1.8rem;
+  padding: 1.5rem 1rem 1.5rem 0.5rem;
   display: block;
-  width: 300px;
+  max-width: 30rem;
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #333333;
@@ -13,7 +13,7 @@ textarea {
 
 input:focus ~ .bar:before,
 textarea:focus ~ .bar:before {
-  width: 300px;
+  width: 30rem;
 }
 
 .input-field:focus {
@@ -22,15 +22,17 @@ textarea:focus ~ .bar:before {
 
 .bar {
   display: block;
-  width: 300px;
+  max-width: 30rem;
   height: 1px;
 }
 
-/* .form-container {
-      margin: auto;
-  } */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
 .form-div {
-  width: 25%;
   margin: auto;
 }
 
@@ -40,30 +42,34 @@ a {
 }
 
 .contact-link-div {
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .contact-link-buttons {
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
 }
 
 .input-field {
-  margin-bottom: 60px;
+  margin: auto auto 6rem auto;
+  width: 40rem;
 }
 
 .contact-container {
-  margin-bottom: 40px;
+  margin: 4rem auto 2rem auto;
+}
+
+.contact-container h1 {
+  margin: 6rem auto 4rem auto;
 }
 
 .send-button {
   margin: auto;
-  margin-left: 40px;
 }
 
 .github-button {
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
 }
 
 .contact-btn-text {

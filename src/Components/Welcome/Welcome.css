@@ -31,7 +31,7 @@ section {
   justify-content: center;
 }
 
-h2 {
+.welcome-text h2 {
   font-size: 45px;
   margin: 0;
   font-weight: 600;
@@ -51,4 +51,39 @@ h2 {
   color: #4169e1;
   font-weight: 800;
   display: inline;
+}
+
+@media only screen and (max-width: 992px) {
+  .welcome-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    align-items: center;
+  }
+  section {
+    width: 100%;
+  }
+  .welcome-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  .linkedinPhoto {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    float: none;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .welcome-h1 {
+    margin: 20px auto;
+  }
+  .welcome-text h2 {
+    display: none;
+  }
 }

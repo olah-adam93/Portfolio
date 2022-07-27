@@ -2,8 +2,6 @@ import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import './Navbar.css';
 
-// const ScrollLink = Scroll.ScrollLink
-
 const Navbar = () => {
   const scrollToTop = () => {
     scroll.scrollToTop();

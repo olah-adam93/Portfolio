@@ -10,7 +10,6 @@ const Welcome = (props) => {
         <section className='welcome-image'>
           <img src={image} alt='linkedinPhoto' className='linkedinPhoto' />
         </section>
-
         <section className='welcome-text'>
           <div className='text-div'>
             <h2>Welcome! My name is</h2>
@@ -18,7 +17,7 @@ const Welcome = (props) => {
             <h2>
               <span>I'm a </span>
               <h3 class='welcome-h3'>
-                <Typed strings={[`Front-end`, 'Web', `Software`]} typeSpeed={120} loop />
+                <Typed strings={['Software', 'Front-end', 'Web']} typeSpeed={120} loop />
               </h3>
               <p>developer</p>
             </h2>
