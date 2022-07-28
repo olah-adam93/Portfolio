@@ -30,7 +30,7 @@ hr {
   height: 0.25rem;
   width: 15%;
   margin: 0;
-  margin-left: 1.4rem;
+  margin-left: 1.5rem;
   border: none;
   transition: 0.3s ease-in-out;
   background: #4169e1;
@@ -38,17 +38,17 @@ hr {
 
 .two:hover ~ hr {
   margin-left: 24%;
-  width: 25%;
+  width: 26%;
 }
 
 .three:hover ~ hr {
-  margin-left: 55%;
-  width: 16%;
+  margin-left: 54%;
+  width: 18%;
 }
 
 .four:hover ~ hr {
   margin-left: 77%;
-  width: 21%;
+  width: 22%;
 }
 
 li {
@@ -86,6 +86,13 @@ li:hover {
     justify-content: flex-end;
   }
 
+  li {
+    display: inline;
+    padding: 0.8rem;
+    margin-top: 2rem;
+    margin: auto;
+  }
+
   hr {
     height: 0.25rem;
     width: 15%;
@@ -102,19 +109,12 @@ li:hover {
   }
 
   .three:hover ~ hr {
-    margin-left: 54%;
-    width: 16%;
+    margin-left: 53%;
+    width: 18%;
   }
 
   .four:hover ~ hr {
     margin-left: 75%;
     width: 22%;
-  }
-
-  li {
-    display: inline;
-    padding: 0.8rem;
-    margin-top: 2rem;
-    margin-left: auto;
   }
 }

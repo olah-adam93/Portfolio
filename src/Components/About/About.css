@@ -16,21 +16,14 @@
   margin: auto;
 }
 
-.hobbies-container .icon {
+.hobbies-container .icon-hb {
+  color: #494949;
   width: 8rem;
   height: 8rem;
 }
 
-.hobbies-container .icon:nth-child(1) {
-  margin-right: 1rem;
-}
-
-.hobbies-container .icon:nth-child(2n) {
-  margin: auto 1rem;
-}
-
-.hobbies-container .icon:nth-last-child() {
-  margin-left: 1rem;
+.hobbies-container .icon-hb:nth-child(n) {
+  margin: 1rem;
 }
 
 .hobbies-p-div {

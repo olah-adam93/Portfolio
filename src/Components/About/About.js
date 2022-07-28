@@ -30,12 +30,12 @@ const About = (props) => {
       <h3 className='hobbies-h3'>Hobbies</h3>
       <div className='hobbies-div'>
         <div className='hobbies-container'>
-          <SportsSoccerIcon className='icon' />
-          <AutoStoriesIcon Icon className='icon' />
-          <DirectionsBikeIcon className='icon' />
-          <SportsEsportsIcon className='icon' />
-          <MovieIcon className='icon' />
-          <FlightIcon className='icon' />
+          <SportsSoccerIcon className='icon-hb' />
+          <AutoStoriesIcon Icon className='icon-hb' />
+          <DirectionsBikeIcon className='icon-hb' />
+          <SportsEsportsIcon className='icon-hb' />
+          <MovieIcon className='icon-hb' />
+          <FlightIcon className='icon-hb' />
         </div>
       </div>
     </div>

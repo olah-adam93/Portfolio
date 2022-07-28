@@ -39,6 +39,7 @@ class Button extends Component {
       <button className='send-button'>
         <div className='contact-btn-text'>
           <a
+            className='btn-send'
             href={`${recipient}${subject}${body}`}
             disabled={this.state.isClicked}
             onClick={this.resetForm}

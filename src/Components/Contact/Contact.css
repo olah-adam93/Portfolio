@@ -39,6 +39,11 @@ textarea:focus ~ .bar:before {
 a {
   text-decoration: none;
   color: #333333;
+  margin: auto;
+}
+
+.contact-btn-text .btn-send {
+  margin: auto;
 }
 
 .contact-link-div {

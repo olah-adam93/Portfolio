@@ -14,7 +14,7 @@ const Welcome = (props) => {
           <div className='text-div'>
             <h2>Welcome! My name is</h2>
             <h1 className='welcome-h1'>Adam Olah</h1>
-            <h2>
+            <h2 className='welcome-h2'>
               <span>I'm a </span>
               <h3 class='welcome-h3'>
                 <Typed strings={['Software', 'Front-end', 'Web']} typeSpeed={120} loop />
