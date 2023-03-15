@@ -63,7 +63,7 @@ const MyCarousel = () => {
         <div>
           <button>
             <div className='carousel-btn-text'>
-              <a href='https://meet-force.web.app/' target='_blank' rel='noreferrer'>
+              <a href='https://meet-force-oa23.netlify.app/' target='_blank' rel='noreferrer'>
                 Try Demo
               </a>
               <CallMissedOutgoingIcon className='icon' />
