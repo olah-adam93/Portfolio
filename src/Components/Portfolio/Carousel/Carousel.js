@@ -153,7 +153,7 @@ const MyCarousel = () => {
           <button>
             <div className="carousel-btn-text">
               <a
-                href="https://humans-vs-zombies-ao24.netlify.app/"
+                href="https://humans-vs-zombies-ac24.netlify.app/"
                 target="_blank"
                 rel="noreferrer"
               >
