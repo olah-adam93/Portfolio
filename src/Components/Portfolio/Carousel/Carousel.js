@@ -152,11 +152,7 @@ const MyCarousel = () => {
         <div>
           <button>
             <div className="carousel-btn-text">
-              <a
-                href="https://humans-vs-zombies-ac24.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="" target="_blank" rel="noreferrer">
                 Try Demo
               </a>
               <CallMissedOutgoingIcon className="icon" />
