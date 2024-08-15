@@ -5,6 +5,15 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CallMissedOutgoingIcon from "@mui/icons-material/CallMissedOutgoing";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
+import rpg1 from "../images/RPG/rpg1.jpg";
+import rpg2 from "../images/RPG/rpg2.jpg";
+import rpg3 from "../images/RPG/rpg3.jpg";
+import rpg4 from "../images/RPG/rpg4.jpg";
+import rpg5 from "../images/RPG/rpg5.jpg";
+import rpg6 from "../images/RPG/rpg6.jpg";
+import rpg7 from "../images/RPG/rpg7.jpg";
+import rpg8 from "../images/RPG/rpg8.jpg";
+
 import meetforce1 from "../images/Meetforce/meetforce_01.jpg";
 import meetforce2 from "../images/Meetforce/meetforce_02.jpg";
 import meetforce3 from "../images/Meetforce/meetforce_03.jpg";
@@ -33,6 +42,73 @@ import currency2 from "../images/Currency_exc/currency_02.jpg";
 const MyCarousel = () => {
   return (
     <div className="carousel-wrapper">
+      <h3 className="projects-h3">RPG Characters</h3>
+      <Carousel showThumbs={false} showStatus={false}>
+        <div className="carousel-img-container">
+          <img src={rpg1} alt="image1" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={rpg2} alt="image2" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={rpg3} alt="image3" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={rpg4} alt="image4" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={rpg5} alt="image5" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={rpg6} alt="image5" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={rpg7} alt="image5" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={rpg8} alt="image5" className="carousel-img" />
+        </div>
+      </Carousel>
+      <div class="carousel-p-div">
+        <p className="carousel-p">
+          The RPG-Characters game is a java-based console application designed
+          to simulate a role-playing game (RPG) environment. The application
+          allows users to create and manage characters from four distinct
+          classes: Mage, Ranger, Rogue, and Warrior. Characters in the game can
+          level up, equip various weapons and armor, and enhance their
+          attributes to improve their power and effectiveness. Dive into this
+          adventure and see how your strategic decisions shape the destiny of
+          your heroes!
+          <br />
+          (Please run the application in an IDE to access the terminal
+          interface.)
+        </p>
+        <p className="carousel-p">Technologies: Core Java, JUnit5</p>
+      </div>
+      <div>
+        <button>
+          <div className="carousel-btn-text">
+            <a href="/Java_RPGCharacters.pdf" target="_blank" rel="noreferrer">
+              Specification
+            </a>
+            <CallMissedOutgoingIcon className="icon" />
+          </div>
+        </button>
+
+        <button>
+          <div className="carousel-btn-text">
+            <a
+              href="https://gitlab.com/adam-olah93/rpg-characters"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Code
+            </a>
+            <GitHubIcon className="icon" />
+          </div>
+        </button>
+      </div>
+      {/* end */}
       <div className="meetforce-div">
         <h3 className="projects-h3">Meetforce</h3>
         <Carousel showThumbs={false} showStatus={false}>
