@@ -24,9 +24,9 @@ const About = (props) => {
       <div className="about-text">
         <p className="about-p">
           Hello! I'm Adam Olah, a <strong>full-stack developer</strong> based in
-          Budapest. In <strong>2021</strong>, I decided to shift my career focus
-          to - <strong>"coding"</strong>, a field that has always interested me.
-          To deepen my expertise, I enrolled in several bootcamps, including{" "}
+          Budapest. In 2021, I decided to shift my career focus to -{" "}
+          <strong>"coding"</strong>, a field that has always interested me. To
+          deepen my expertise, I enrolled in several bootcamps, including{" "}
           <strong>Full-stack Java Developer</strong> program(Noroff University)
           and <strong>Frontend Developer </strong> program at Progmatic Academy
           in Budapest. These programs have provided me with a strong foundation

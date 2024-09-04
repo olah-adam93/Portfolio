@@ -109,25 +109,111 @@ const MyCarousel = () => {
         </button>
       </div>
       {/* end */}
+      <h3 className="projects-h3 hvz">Humans vs. Zombies</h3>
+      <Carousel showThumbs={false} showStatus={false}>
+        <div className="carousel-img-container">
+          <img src={hvz1} alt="image1" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={hvz2} alt="image2" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={hvz3} alt="image3" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={hvz4} alt="image4" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={hvz5} alt="image5" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={hvz6} alt="image5" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={hvz7} alt="image5" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={hvz8} alt="image5" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={hvz9} alt="image5" className="carousel-img" />
+        </div>
+      </Carousel>
+      <div class="carousel-p-div">
+        <p className="carousel-p">
+          Humans vs. Zombies (HvZ) takes the classic game of tag to a whole new
+          level. Each human player is armed with a secret four-digit binary
+          code, hidden from the lurking "Original Zombie." The challenge? The
+          zombie must crack the code, turning humans into zombies with every
+          successful guess, ultimately leading to the expansion of the undead
+          horde. It's a game of strategy and digital infection. (username:
+          cyberphoenix, passw: cyberphoenix01)
+          <br />{" "}
+          <strong>
+            Note: Application is hosted on Heroku using{" "}
+            <a
+              href="https://devcenter.heroku.com/articles/eco-dyno-hours#dyno-sleeping"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "blue" }}
+            >
+              ECO dynos
+            </a>{" "}
+            . If there's no activity for a while, the app may go to "sleep", so
+            please allow a few seconds for it to "wake up" when accessed. Thanks
+            for your patience!{" "}
+          </strong>
+        </p>
+        <p className="carousel-p">
+          Technologies: Java/Spring, TypeScript/Angular, Heroku (Host), AWS RDS
+          (PostgreSQL), WebSocket (SockJS and Stomp), SCSS, Client-side
+          rendering, Unsplash API, Google Maps API, Geocoding API, Keycloak
+          (OAuth2 and OIDC)
+        </p>
+      </div>
+      <div>
+        <button>
+          <div className="carousel-btn-text">
+            <a
+              href="https://humans-vs-zombies-ac24.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Try Demo
+            </a>
+            <CallMissedOutgoingIcon className="icon" />
+          </div>
+        </button>
+
+        <button>
+          <div className="carousel-btn-text">
+            <a
+              href="https://github.com/olah-adam93/Humans_vs_Zombies"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Code
+            </a>
+            <GitHubIcon className="icon" />
+          </div>
+        </button>
+      </div>
+      {/* end */}
       <div className="meetforce-div">
         <h3 className="projects-h3">Meetforce</h3>
         <Carousel showThumbs={false} showStatus={false}>
           <div className="carousel-img-container">
             <img src={meetforce1} alt="image1" className="carousel-img" />
           </div>
-
           <div className="carousel-img-container">
             <img src={meetforce2} alt="image2" className="carousel-img" />
           </div>
-
           <div className="carousel-img-container">
             <img src={meetforce3} alt="image3" className="carousel-img" />
           </div>
-
           <div className="carousel-img-container">
             <img src={meetforce4} alt="image4" className="carousel-img" />
           </div>
-
           <div className="carousel-img-container">
             <img src={meetforce5} alt="image5" className="carousel-img" />
           </div>
@@ -167,78 +253,6 @@ const MyCarousel = () => {
             <div className="carousel-btn-text">
               <a
                 href="https://github.com/olah-adam93/MeetForce"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Code
-              </a>
-              <GitHubIcon className="icon" />
-            </div>
-          </button>
-        </div>
-        {/* end */}
-        <h3 className="projects-h3 hvz">Humans vs. Zombies</h3>
-        <Carousel showThumbs={false} showStatus={false}>
-          <div className="carousel-img-container">
-            <img src={hvz1} alt="image1" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={hvz2} alt="image2" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={hvz3} alt="image3" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={hvz4} alt="image4" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={hvz5} alt="image5" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={hvz6} alt="image5" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={hvz7} alt="image5" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={hvz8} alt="image5" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={hvz9} alt="image5" className="carousel-img" />
-          </div>
-        </Carousel>
-        <div class="carousel-p-div">
-          <p className="carousel-p">
-            Humans vs. Zombies (HvZ) takes the classic game of tag to a whole
-            new level. Each human player is armed with a secret four-digit
-            binary code, hidden from the lurking "Original Zombie." The
-            challenge? The zombie must crack the code, turning humans into
-            zombies with every successful guess, ultimately leading to the
-            expansion of the undead horde. It's a thrilling game of wits,
-            evasion, and digital infection. Give it a try if you've got the
-            courage! (username: cyberphoenix, passw: cyberphoenix01)
-          </p>
-          <p className="carousel-p">
-            Technologies: Java/Spring, TypeScript/Angular, Heroku (Host), AWS
-            RDS (PostgreSQL), WebSocket (SockJS and Stomp), SCSS, Client-side
-            rendering, Unsplash API, Google Maps API, Geocoding API, Keycloak
-            (OAuth2 and OIDC)
-          </p>
-        </div>
-        <div>
-          <button>
-            <div className="carousel-btn-text">
-              <a href="" target="_blank" rel="noreferrer">
-                Try Demo
-              </a>
-              <CallMissedOutgoingIcon className="icon" />
-            </div>
-          </button>
-
-          <button>
-            <div className="carousel-btn-text">
-              <a
-                href="https://github.com/olah-adam93/Humans_vs_Zombies"
                 target="_blank"
                 rel="noreferrer"
               >

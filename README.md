@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+## Portfolio Page! 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi there! I’m Adam Olah, a dedicated full-stack java developer, welcome to my portfolio page! Here, you’ll find my latest projects, previous work, and a bit about my professional background.
 
-## Available Scripts
+## About Me
 
-In the project directory, you can run:
+- Email: olah_adam@yahoo.com
+- [LinkedIn](https://www.linkedin.com/in/%C3%A1d%C3%A1m-ol%C3%A1h-748672145/)
+- [GitHub](https://github.com/olah-adam93)
 
-### `npm start`
+Each project here represents an exciting challenge and countless hours of hard work. I focused on creative problem-solving and developing effective solutions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## My Projects
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### RPG Characters
 
-### `npm test`
+**Description:** The RPG-Characters game is a Java-based console application designed to simulate a role-playing game (RPG) environment. Users can create and manage characters from four distinct classes: Mage, Ranger, Rogue, and Warrior. Characters can level up, equip various weapons and armor, and enhance their attributes to improve their power and effectiveness.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Technologies:** Core Java, JUnit5
 
-### `npm run build`
+**Demo:** [View Specification](https://portfolio-ao24.netlify.app/Java_RPGCharacters.pdf)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Code:** [View Code](https://gitlab.com/adam-olah93/rpg-characters)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Humans vs. Zombies (HvZ)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Description:** HvZ takes the classic game of tag to a new level. Each human player is armed with a secret four-digit binary code, hidden from the "Original Zombie." The zombie must crack the code to turn humans into zombies, expanding the undead horde.
 
-### `npm run eject`
+**Technologies:** Java/Spring, TypeScript/Angular, Heroku (Host), AWS RDS (PostgreSQL), WebSocket (SockJS and Stomp), SCSS, Client-side rendering, Unsplash API, Google Maps API, Geocoding API, Keycloak (OAuth2 and OIDC)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Demo:** [Try Demo](https://humans-vs-zombies-ac24.netlify.app/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Code:** [View Code](https://github.com/olah-adam93/Humans_vs_Zombies)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Meetforce
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Description:** Meetforce is a global self-service ticketing platform for live experiences. Users can create, share, find, and attend events like marathons, conferences, gaming competitions and archery contest.
 
-## Learn More
+**Technologies:** ReactJS, JavaScript, Firebase (Auth, RTDB, Storage, Host), React ContextAPI, React-Router, SCSS, Client-side rendering, Google Maps API, Stripe API
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Demo:** [Try Demo](https://meet-force-oa23.netlify.app/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Code:** [View Code](https://github.com/olah-adam93/MeetForce)
 
-### Code Splitting
+### Tic-Tac-Toe
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Description:** A multiplayer game where players position their marks to create a continuous line of three cells vertically, horizontally, or diagonally. I created a fun version of this classic game.
 
-### Analyzing the Bundle Size
+**Technologies:** HTML, CSS, JavaScript
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Demo:** [Try Demo](https://tic-tac-toe-oa22.netlify.app/)
 
-### Making a Progressive Web App
+**Code:** [View Code](https://github.com/olah-adam93/Tic-Tac-Toe)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Currency Converter
 
-### Advanced Configuration
+**Description:** An application that allows you to convert an amount of currency from one type to another, with an easy option to swap the currencies. You can also easily exchange or reverse the two countries' currency by clicking on the exchange icon.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Technologies:** HTML, CSS, JavaScript, ExchangeRate-API
 
-### Deployment
+**Demo:** [Try Demo](https://currency-conv-oa22.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Code:** [View Code](https://github.com/olah-adam93/CurrencyConverter)
 
-### `npm run build` fails to minify
+## Skills/Technologies 🛠️
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Programming Languages:** Java, JavaScript/TypeScript
+
+**Frameworks & Libraries:** Quarkus, Spring, AngularJS, ReactJS, NodeJS
+
+**Databases:** MongoDB, PostgreSQL
+
+**Cloud & Hosting Platforms:** Firebase, Heroku
+
+**Version Control:** Git, GitHub, GitLab
+
+**Web Technologies:** HTML5, CSS, Bootstrap
+
+**Tools & Platforms:** Jira, Docker, Maven, Keycloak, Apache Kafka
+
+**Testing & Coverage:** JUnit, Mockito, Wiremock, JaCoCo
+
+**DevOps:** ArgoCD
+
+**Thank you for visiting! Feel free to explore my work, and let's connect if you're interested in collaborating.**
+☕
