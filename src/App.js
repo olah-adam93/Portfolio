@@ -16,7 +16,7 @@ function App() {
         <About title="About" subtitle="About" id="about" className="fullpage" />
         <Contact title="Contact" subtitle="Contact" id="contact" />
       </div>
-      <footer>© 2024 Adam Olah.</footer>
+      <footer>© 2021 - 2026 Adam Olah.</footer>
     </div>
   );
 }
