@@ -6,13 +6,15 @@ import CallMissedOutgoingIcon from "@mui/icons-material/CallMissedOutgoing";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 import rpg1 from "../images/RPG/rpg1.jpg";
-import rpg2 from "../images/RPG/rpg2.jpg";
-import rpg3 from "../images/RPG/rpg3.jpg";
-import rpg4 from "../images/RPG/rpg4.jpg";
-import rpg5 from "../images/RPG/rpg5.jpg";
-import rpg6 from "../images/RPG/rpg6.jpg";
-import rpg7 from "../images/RPG/rpg7.jpg";
-import rpg8 from "../images/RPG/rpg8.jpg";
+import rpg2 from "../images/RPG/rpg2.png";
+import rpg3 from "../images/RPG/rpg3.png";
+import rpg4 from "../images/RPG/rpg4.png";
+import rpg5 from "../images/RPG/rpg5.png";
+import rpg6 from "../images/RPG/rpg6.png";
+import rpg7 from "../images/RPG/rpg7.png";
+import rpg8 from "../images/RPG/rpg8.png";
+import rpg9 from "../images/RPG/rpg9.png";
+import rpg10 from "../images/RPG/rpg10.png";
 
 import meetforce1 from "../images/Meetforce/meetforce_01.jpg";
 import meetforce2 from "../images/Meetforce/meetforce_02.jpg";
@@ -68,6 +70,12 @@ const MyCarousel = () => {
         <div className="carousel-img-container">
           <img src={rpg8} alt="image5" className="carousel-img" />
         </div>
+        <div className="carousel-img-container">
+          <img src={rpg9} alt="image5" className="carousel-img" />
+        </div>
+        <div className="carousel-img-container">
+          <img src={rpg10} alt="image5" className="carousel-img" />
+        </div>
       </Carousel>
       <div class="carousel-p-div">
         <p className="carousel-p">
@@ -79,17 +87,21 @@ const MyCarousel = () => {
           attributes to improve their power and effectiveness. Dive into this
           adventure and see how your strategic decisions shape the destiny of
           your heroes!
-          <br />
-          (Please run the application in an IDE to access the terminal
-          interface.)
         </p>
-        <p className="carousel-p">Technologies: Core Java, JUnit5</p>
+        <p className="carousel-p">
+          Technologies: Java, Spring MVC, React, TypeScript, JUnit5, Heroku
+          (Host)
+        </p>
       </div>
       <div>
         <button>
           <div className="carousel-btn-text">
-            <a href="/Java_RPGCharacters.pdf" target="_blank" rel="noreferrer">
-              Specification
+            <a
+              href="https://rpg-characters.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Try Demo
             </a>
             <CallMissedOutgoingIcon className="icon" />
           </div>
