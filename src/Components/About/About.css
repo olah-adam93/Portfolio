@@ -69,5 +69,42 @@
 }
 
 .about-skills-container ul li {
+  display: block;
+  padding: 0.8rem;
   margin: 0;
+  opacity: 0;
+  transform: translateX(-1.5rem);
+  transition:
+    opacity 0.45s ease,
+    color 0.25s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about-skills-container.is-visible ul li {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-skills-container.is-visible ul li:nth-child(1) { transition-delay: 0.05s; }
+.about-skills-container.is-visible ul li:nth-child(2) { transition-delay: 0.1s; }
+.about-skills-container.is-visible ul li:nth-child(3) { transition-delay: 0.15s; }
+.about-skills-container.is-visible ul li:nth-child(4) { transition-delay: 0.2s; }
+.about-skills-container.is-visible ul li:nth-child(5) { transition-delay: 0.25s; }
+.about-skills-container.is-visible ul li:nth-child(6) { transition-delay: 0.3s; }
+.about-skills-container.is-visible ul li:nth-child(7) { transition-delay: 0.35s; }
+.about-skills-container.is-visible ul li:nth-child(8) { transition-delay: 0.4s; }
+.about-skills-container.is-visible ul li:nth-child(9) { transition-delay: 0.45s; }
+
+.about-skills-container ul li:hover {
+  color: #4169e1;
+  transform: translateX(0.4rem);
+}
+
+.hobbies-container .icon-hb {
+  transition: color 0.25s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hobbies-container .icon-hb:hover {
+  color: #4169e1;
+  transform: translateY(-0.5rem) rotate(-3deg);
 }

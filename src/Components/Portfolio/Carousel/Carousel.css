@@ -6,6 +6,56 @@
   border-radius: 1rem;
 }
 
+.carousel .slide img {
+  opacity: 0.72;
+  transform: scale(0.975);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.carousel .slide.selected img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.project-reveal {
+  opacity: 0;
+  transform: translateY(5rem);
+  width: 100%;
+  margin: 5rem auto;
+  padding: 3rem;
+  border: 1px solid rgba(65, 105, 225, 0.1);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1.5rem 4rem rgba(31, 45, 85, 0.07);
+  transition:
+    opacity 0.75s ease-out,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.project-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-reveal.is-visible:hover {
+  border-color: rgba(65, 105, 225, 0.2);
+  box-shadow: 0 2rem 5rem rgba(31, 45, 85, 0.1);
+  transform: translateY(-0.4rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 .control-dots {
   bottom: 1rem;
 }
@@ -24,6 +74,17 @@
 .tic-tac-toe-div,
 .currency-conv-div {
   margin: 5rem auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .project-reveal {
+    padding: 1.8rem;
+    border-radius: 1.5rem;
+  }
+
+  .project-reveal.is-visible:hover {
+    transform: translateY(0);
+  }
 }
 
 .carousel-p-div {

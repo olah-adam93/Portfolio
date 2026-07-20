@@ -1,6 +1,6 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import "./Carousel.css";
-import { Carousel } from "react-responsive-carousel";
+import {Carousel} from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import CallMissedOutgoingIcon from "@mui/icons-material/CallMissedOutgoing";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -42,348 +42,385 @@ import currency1 from "../images/Currency_exc/currency_01.jpg";
 import currency2 from "../images/Currency_exc/currency_02.jpg";
 
 const MyCarousel = () => {
-  return (
-    <div className="carousel-wrapper">
-      <h3 className="projects-h3">RPG Characters</h3>
-      <Carousel showThumbs={false} showStatus={false}>
-        <div className="carousel-img-container">
-          <img src={rpg1} alt="image1" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={rpg2} alt="image2" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={rpg3} alt="image3" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={rpg4} alt="image4" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={rpg5} alt="image5" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={rpg6} alt="image5" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={rpg7} alt="image5" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={rpg8} alt="image5" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={rpg9} alt="image5" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={rpg10} alt="image5" className="carousel-img" />
-        </div>
-      </Carousel>
-      <div class="carousel-p-div">
-        <p className="carousel-p">
-          The RPG-Characters game is a java-based console application designed
-          to simulate a role-playing game (RPG) environment. The application
-          allows users to create and manage characters from four distinct
-          classes: Mage, Ranger, Rogue, and Warrior. Characters in the game can
-          level up, equip various weapons and armor, and enhance their
-          attributes to improve their power and effectiveness. Dive into this
-          adventure and see how your strategic decisions shape the destiny of
-          your heroes!
-        </p>
-        <p className="carousel-p">
-          Technologies: Java, Spring MVC, React, TypeScript, JUnit5, Heroku
-          (Host)
-        </p>
-      </div>
-      <div>
-        <button>
-          <div className="carousel-btn-text">
-            <a
-              href="https://rpg-characters.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Try Demo
-            </a>
-            <CallMissedOutgoingIcon className="icon" />
-          </div>
-        </button>
+    const carouselRef = useRef(null);
 
-        <button>
-          <div className="carousel-btn-text">
-            <a
-              href="https://gitlab.com/adam-olah93/rpg-characters"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Code
-            </a>
-            <GitHubIcon className="icon" />
-          </div>
-        </button>
-      </div>
-      {/* end */}
-      <h3 className="projects-h3 hvz">Humans vs. Zombies</h3>
-      <Carousel showThumbs={false} showStatus={false}>
-        <div className="carousel-img-container">
-          <img src={hvz1} alt="image1" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={hvz2} alt="image2" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={hvz3} alt="image3" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={hvz4} alt="image4" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={hvz5} alt="image5" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={hvz6} alt="image5" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={hvz7} alt="image5" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={hvz8} alt="image5" className="carousel-img" />
-        </div>
-        <div className="carousel-img-container">
-          <img src={hvz9} alt="image5" className="carousel-img" />
-        </div>
-      </Carousel>
-      <div class="carousel-p-div">
-        <p className="carousel-p">
-          Humans vs. Zombies (HvZ) takes the classic game of tag to a whole new
-          level. Each human player is armed with a secret four-digit binary
-          code, hidden from the lurking "Original Zombie." The challenge? The
-          zombie must crack the code, turning humans into zombies with every
-          successful guess, ultimately leading to the expansion of the undead
-          horde. It's a game of strategy and digital infection. (username:
-          cyberphoenix, passw: cyberphoenix01)
-          <br />{" "}
-          <strong>
-            Note: Application is hosted on Heroku using{" "}
-            <a
-              href="https://devcenter.heroku.com/articles/eco-dyno-hours#dyno-sleeping"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "blue" }}
-            >
-              ECO dynos
-            </a>{" "}
-            . If there's no activity for a while, the app may go to "sleep", so
-            please allow a few seconds for it to "wake up" when accessed. Thanks
-            for your patience!{" "}
-          </strong>
-        </p>
-        <p className="carousel-p">
-          Technologies: Java/Spring, TypeScript/Angular, Heroku (Host), AWS RDS
-          (PostgreSQL), WebSocket (SockJS and Stomp), SCSS, Client-side
-          rendering, Unsplash API, Google Maps API, Geocoding API, Keycloak
-          (OAuth2 and OIDC)
-        </p>
-      </div>
-      <div>
-        <button>
-          <div className="carousel-btn-text">
-            <a
-              href="https://humans-vs-zombies-ac24.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Try Demo
-            </a>
-            <CallMissedOutgoingIcon className="icon" />
-          </div>
-        </button>
+    useEffect(() => {
+        const carousel = carouselRef.current;
+        const projects = carousel?.querySelectorAll(".project-reveal");
 
-        <button>
-          <div className="carousel-btn-text">
-            <a
-              href="https://github.com/olah-adam93/Humans_vs_Zombies"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Code
-            </a>
-            <GitHubIcon className="icon" />
-          </div>
-        </button>
-      </div>
-      {/* end */}
-      <div className="meetforce-div">
-        <h3 className="projects-h3">Meetforce</h3>
-        <Carousel showThumbs={false} showStatus={false}>
-          <div className="carousel-img-container">
-            <img src={meetforce1} alt="image1" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={meetforce2} alt="image2" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={meetforce3} alt="image3" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={meetforce4} alt="image4" className="carousel-img" />
-          </div>
-          <div className="carousel-img-container">
-            <img src={meetforce5} alt="image5" className="carousel-img" />
-          </div>
-        </Carousel>
-        <div class="carousel-p-div">
-          <p className="carousel-p">
-            Meetforce is a global self-service ticketing platform for live
-            experiences that allows anyone to create, share, find and attend
-            events that fuel their passions and enrich their lives. From Kung-Fu
-            presentation, marathons, conferences, community rallies, to gaming
-            competitions and archery contest. Our mission is to bring the world
-            together through live experiences. <br />
-            If you prefer not to register , feel free to look around! <br />
-            (email: visitor@visitor.com , passw: visitor01)
-          </p>
-          <p className="carousel-p">
-            Technologies: ReactJS, JavaScript, Firebase (Auth, RTDB, Storage,
-            Host), React ContextAPI, React-Router, SCSS, Client side rendering,
-            GoogleMapsAPI ,StripeAPI
-          </p>
-        </div>
-        <div>
-          <button>
-            <div className="carousel-btn-text">
-              <a
-                href="https://meet-force-oa23.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Try Demo
-              </a>
-              <CallMissedOutgoingIcon className="icon" />
-            </div>
-          </button>
+        if (!projects?.length) return undefined;
 
-          <button>
-            <div className="carousel-btn-text">
-              <a
-                href="https://github.com/olah-adam93/MeetForce"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Code
-              </a>
-              <GitHubIcon className="icon" />
+        if (!("IntersectionObserver" in window)) {
+            projects.forEach((project) => project.classList.add("is-visible"));
+            return undefined;
+        }
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("is-visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.12,
+                rootMargin: "0px 0px -8% 0px",
+            }
+        );
+
+        projects.forEach((project) => observer.observe(project));
+
+        return () => observer.disconnect();
+    }, []);
+
+    return (
+        <div className="carousel-wrapper" ref={carouselRef}>
+            <div className="project-reveal">
+                <h3 className="projects-h3">RPG Characters</h3>
+                <Carousel showThumbs={false} showStatus={false}>
+                    <div className="carousel-img-container">
+                        <img src={rpg1} alt="image1" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={rpg2} alt="image2" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={rpg3} alt="image3" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={rpg4} alt="image4" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={rpg5} alt="image5" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={rpg6} alt="image5" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={rpg7} alt="image5" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={rpg8} alt="image5" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={rpg9} alt="image5" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={rpg10} alt="image5" className="carousel-img"/>
+                    </div>
+                </Carousel>
+                <div className="carousel-p-div">
+                    <p className="carousel-p">
+                        The RPG-Characters game is a java-based console application designed
+                        to simulate a role-playing game (RPG) environment. The application
+                        allows users to create and manage characters from four distinct
+                        classes: Mage, Ranger, Rogue, and Warrior. Characters in the game can
+                        level up, equip various weapons and armor, and enhance their
+                        attributes to improve their power and effectiveness. Dive into this
+                        adventure and see how your strategic decisions shape the destiny of
+                        your heroes!
+                    </p>
+                    <p className="carousel-p">
+                        Technologies: Java, Spring MVC, React, TypeScript, JUnit5, Heroku
+                        (Host)
+                    </p>
+                </div>
+                <div>
+                    <button>
+                        <div className="carousel-btn-text">
+                            <a
+                                href="https://rpg-characters.netlify.app/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Try Demo
+                            </a>
+                            <CallMissedOutgoingIcon className="icon"/>
+                        </div>
+                    </button>
+
+                    <button>
+                        <div className="carousel-btn-text">
+                            <a
+                                href="https://gitlab.com/adam-olah93/rpg-characters"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View Code
+                            </a>
+                            <GitHubIcon className="icon"/>
+                        </div>
+                    </button>
+                </div>
+                {/* end */}
             </div>
-          </button>
+            <div className="project-reveal">
+                <h3 className="projects-h3 hvz">Humans vs. Zombies</h3>
+                <Carousel showThumbs={false} showStatus={false}>
+                    <div className="carousel-img-container">
+                        <img src={hvz1} alt="image1" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={hvz2} alt="image2" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={hvz3} alt="image3" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={hvz4} alt="image4" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={hvz5} alt="image5" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={hvz6} alt="image5" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={hvz7} alt="image5" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={hvz8} alt="image5" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={hvz9} alt="image5" className="carousel-img"/>
+                    </div>
+                </Carousel>
+                <div className="carousel-p-div">
+                    <p className="carousel-p">
+                        Humans vs. Zombies (HvZ) takes the classic game of tag to a whole new
+                        level. Each human player is armed with a secret four-digit binary
+                        code, hidden from the lurking "Original Zombie." The challenge? The
+                        zombie must crack the code, turning humans into zombies with every
+                        successful guess, ultimately leading to the expansion of the undead
+                        horde. It's a game of strategy and digital infection. (username:
+                        cyberphoenix, passw: cyberphoenix01)
+                        <br/>{" "}
+                        <strong>
+                            Note: Application is hosted on Heroku using{" "}
+                            <a
+                                href="https://devcenter.heroku.com/articles/eco-dyno-hours#dyno-sleeping"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={{color: "blue"}}
+                            >
+                                ECO dynos
+                            </a>{" "}
+                            . If there's no activity for a while, the app may go to "sleep", so
+                            please allow a few seconds for it to "wake up" when accessed. Thanks
+                            for your patience!{" "}
+                        </strong>
+                    </p>
+                    <p className="carousel-p">
+                        Technologies: Java/Spring, TypeScript/Angular, Heroku (Host), AWS RDS
+                        (PostgreSQL), WebSocket (SockJS and Stomp), SCSS, Client-side
+                        rendering, Unsplash API, Google Maps API, Geocoding API, Keycloak
+                        (OAuth2 and OIDC)
+                    </p>
+                </div>
+                <div>
+                    <button>
+                        <div className="carousel-btn-text">
+                            <a
+                                href="https://humans-vs-zombies-ac24.netlify.app/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Try Demo
+                            </a>
+                            <CallMissedOutgoingIcon className="icon"/>
+                        </div>
+                    </button>
+
+                    <button>
+                        <div className="carousel-btn-text">
+                            <a
+                                href="https://github.com/olah-adam93/Humans_vs_Zombies"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View Code
+                            </a>
+                            <GitHubIcon className="icon"/>
+                        </div>
+                    </button>
+                </div>
+                {/* end */}
+            </div>
+            <div className="meetforce-div project-reveal">
+                <h3 className="projects-h3">Meetforce</h3>
+                <Carousel showThumbs={false} showStatus={false}>
+                    <div className="carousel-img-container">
+                        <img src={meetforce1} alt="image1" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={meetforce2} alt="image2" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={meetforce3} alt="image3" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={meetforce4} alt="image4" className="carousel-img"/>
+                    </div>
+                    <div className="carousel-img-container">
+                        <img src={meetforce5} alt="image5" className="carousel-img"/>
+                    </div>
+                </Carousel>
+                <div className="carousel-p-div">
+                    <p className="carousel-p">
+                        Meetforce is a global self-service ticketing platform for live
+                        experiences that allows anyone to create, share, find and attend
+                        events that fuel their passions and enrich their lives. From Kung-Fu
+                        presentation, marathons, conferences, community rallies, to gaming
+                        competitions and archery contest. Our mission is to bring the world
+                        together through live experiences. <br/>
+                        If you prefer not to register , feel free to look around! <br/>
+                        (email: visitor@visitor.com , passw: visitor01)
+                    </p>
+                    <p className="carousel-p">
+                        Technologies: ReactJS, JavaScript, Firebase (Auth, RTDB, Storage,
+                        Host), React ContextAPI, React-Router, SCSS, Client side rendering,
+                        GoogleMapsAPI ,StripeAPI
+                    </p>
+                </div>
+                <div>
+                    <button>
+                        <div className="carousel-btn-text">
+                            <a
+                                href="https://meet-force-oa23.netlify.app/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Try Demo
+                            </a>
+                            <CallMissedOutgoingIcon className="icon"/>
+                        </div>
+                    </button>
+
+                    <button>
+                        <div className="carousel-btn-text">
+                            <a
+                                href="https://github.com/olah-adam93/MeetForce"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View Code
+                            </a>
+                            <GitHubIcon className="icon"/>
+                        </div>
+                    </button>
+                </div>
+                {/* end */}
+            </div>
+            <div className="tic-tac-toe-div project-reveal">
+                <h3 className="projects-h3">Tic-Tac-Toe</h3>
+                <Carousel showThumbs={false} showStatus={false}>
+                    <div>
+                        <img src={tictactoe1} alt="image1"/>
+                    </div>
+                    <div>
+                        <img src={tictactoe2} alt="image2"/>
+                    </div>
+                    <div>
+                        <img src={tictactoe3} alt="image3"/>
+                    </div>
+                    <div>
+                        <img src={tictactoe4} alt="image4"/>
+                    </div>
+                    <div>
+                        <img src={tictactoe5} alt="image5"/>
+                    </div>
+                </Carousel>
+                <div className="carousel-p-div">
+                    <p className="carousel-p">
+                        Tic tac toe is a multiplayer game and the players of this game
+                        have to position their marks(sign) so that they can construct a
+                        continuous line of three cells or boxes vertically, horizontally,
+                        or diagonally. An opponent can stop a win by blocking the end of
+                        the opponent's line. I created my own version of this game to make
+                        it more enjoyable, give it a try..!
+                    </p>
+                    <p className="carousel-p">Technologies: HTML, CSS, JavaScript</p>
+                </div>
+                <div>
+                    <button>
+                        <div className="carousel-btn-text">
+                            <a
+                                href="https://tic-tac-toe-oa22.netlify.app/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Try Demo
+                            </a>
+                            <CallMissedOutgoingIcon className="icon"/>
+                        </div>
+                    </button>
+                    <button>
+                        <div className="carousel-btn-text">
+                            <a
+                                href="https://github.com/olah-adam93/Tic-Tac-Toe"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View Code
+                            </a>
+                            <GitHubIcon className="icon"/>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            {/* end */}
+            <div className="currency-conv-div project-reveal">
+                <h3 className="projects-h3">Currency Converter</h3>
+                <Carousel showThumbs={false} showStatus={false}>
+                    <div>
+                        <img src={currency1} alt="image1"/>
+                    </div>
+                    <div>
+                        <img src={currency2} alt="image2"/>
+                    </div>
+                </Carousel>
+                <div className="carousel-p-div">
+                    <p className="carousel-p">
+                        In this app, you can enter your amount and convert your currency
+                        to a different country's currency. You can also easily exchange or
+                        reverse the two countries' currency by clicking on the exchange
+                        icon.
+                    </p>
+                    <p className="carousel-p">
+                        Technologies: HTML, CSS, JavaScript, ExchangeRate-API
+                    </p>
+                </div>
+                <div>
+                    <button>
+                        <div className="carousel-btn-text">
+                            <a
+                                href="https://currency-conv-oa22.netlify.app/"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                Try Demo
+                            </a>
+                            <CallMissedOutgoingIcon className="icon"/>
+                        </div>
+                    </button>
+                    <button>
+                        <div className="carousel-btn-text">
+                            <a
+                                href="https://github.com/olah-adam93/CurrencyConverter"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View Code
+                            </a>
+                            <GitHubIcon className="icon"/>
+                        </div>
+                    </button>
+                </div>
+            </div>
         </div>
-        {/* end */}
-        <div className="tic-tac-toe-div">
-          <h3 className="projects-h3">Tic-Tac-Toe</h3>
-          <Carousel showThumbs={false} showStatus={false}>
-            <div>
-              <img src={tictactoe1} alt="image1" />
-            </div>
-            <div>
-              <img src={tictactoe2} alt="image2" />
-            </div>
-            <div>
-              <img src={tictactoe3} alt="image3" />
-            </div>
-            <div>
-              <img src={tictactoe4} alt="image4" />
-            </div>
-            <div>
-              <img src={tictactoe5} alt="image5" />
-            </div>
-          </Carousel>
-          <div class="carousel-p-div">
-            <p className="carousel-p">
-              Tic tac toe is a multiplayer game and the players of this game
-              have to position their marks(sign) so that they can construct a
-              continuous line of three cells or boxes vertically, horizontally,
-              or diagonally. An opponent can stop a win by blocking the end of
-              the opponent's line. I created my own version of this game to make
-              it more enjoyable, give it a try..!
-            </p>
-            <p className="carousel-p">Technologies: HTML, CSS, JavaScript</p>
-          </div>
-          <div>
-            <button>
-              <div className="carousel-btn-text">
-                <a
-                  href="https://tic-tac-toe-oa22.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Try Demo
-                </a>
-                <CallMissedOutgoingIcon className="icon" />
-              </div>
-            </button>
-            <button>
-              <div className="carousel-btn-text">
-                <a
-                  href="https://github.com/olah-adam93/Tic-Tac-Toe"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Code
-                </a>
-                <GitHubIcon className="icon" />
-              </div>
-            </button>
-          </div>
-        </div>
-        {/* end */}
-        <div className="currency-conv-div">
-          <h3 className="projects-h3">Currency Converter</h3>
-          <Carousel showThumbs={false} showStatus={false}>
-            <div>
-              <img src={currency1} alt="image1" />
-            </div>
-            <div>
-              <img src={currency2} alt="image2" />
-            </div>
-          </Carousel>
-          <div class="carousel-p-div">
-            <p className="carousel-p">
-              In this app, you can enter your amount and convert your currency
-              to a different country's currency. You can also easily exchange or
-              reverse the two countries' currency by clicking on the exchange
-              icon.
-            </p>
-            <p className="carousel-p">
-              Technologies: HTML, CSS, JavaScript, ExchangeRate-API
-            </p>
-          </div>
-          <div>
-            <button>
-              <div className="carousel-btn-text">
-                <a
-                  href="https://currency-conv-oa22.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Try Demo
-                </a>
-                <CallMissedOutgoingIcon className="icon" />
-              </div>
-            </button>
-            <button>
-              <div className="carousel-btn-text">
-                <a
-                  href="https://github.com/olah-adam93/CurrencyConverter"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  View Code
-                </a>
-                <GitHubIcon className="icon" />
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default MyCarousel;
